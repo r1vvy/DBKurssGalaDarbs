@@ -1,27 +1,24 @@
 <?php
-require_once 'config.php';
-echo '
-<a href="index.html">Sākums</a>
-<h3>DB Tabulas izvēle</h3>
-';
-$query="show tables";
-$result=$conn->query($query);
+require_once("config.php");
+echo '<br/>';
+echo '<a href="index.html">Sākums</a>
+        <h3>Izvēlaties tabulu:</h3>';
+$query = 'show tables';
+$result = $conn->query($query);
+//$row = $result->fetch_assoc();
+//print_r($row);
 
+//echo '<th>header</th>';
 $i = 1;
-echo "<table border='1'>";
-echo "<tr><th>Npk.</th><th>Tabulas nosaukums</th></tr>";
 while ($row = $result->fetch_assoc()) {
-    echo "<tr><td>" . $i . ".</td><td>" . $row['Tables_in_kajasbumba'] . "</td></tr>";
+    echo $i . ". " . $row["Tables_in_kajasbumba"] . '<br/>';
     $i++;
 }
-echo "</table>";
-
-// Forma, lai izvēlētos tabulu
-echo '
-<br>
-<form action="tabulas_saturs.php" method="post">
-    <label for="table">Ievadiet tabulas nosaukumu</label>
-    <input type="text" name="table" required>
+echo '<br/>';
+// forma
+echo
+'<form action="table.php" method="get">
+    <label for="table">Ievadiet tabulas nosaukumu:</label>
+    <input type="text" name="table" required="required">
     <input type="submit" value="Tabulas saturs">
-</form>
-';
+    </form>';
