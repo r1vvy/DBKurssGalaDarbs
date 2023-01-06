@@ -1,9 +1,8 @@
 <?php
 require_once("config.php");
-echo '
-<a href="tabulas_izvele_ierakstam.php">Atpakaļ</a>' >
-    // sanemam tables nosaukumu
-    $table = $_POST["table"];
+echo '<a href="tabulas_izvele_ierakstam.php">Atpakaļ</a>';
+// sanemam tables nosaukumu
+$table = $_POST["table"];
 echo '<h3>Tabulas "' . $table . '" saturs</h3>';
 // izpilda vaicajumu select * from table
 $query = "select * from " . $table;
