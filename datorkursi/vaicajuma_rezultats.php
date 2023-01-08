@@ -1,6 +1,5 @@
 <?php
     require_once("config.php");
-    echo '<br/>';
     echo '<a href="vaicajumu_saraksts.html">Atpakaļ</a>';
     $query = $_POST["ieraksts"];
     echo "<h3>Vaicājums</h3>";
@@ -30,7 +29,4 @@
         echo '</tr>';
     }
     echo '</table>';
-    
-    
-
 ?>
