@@ -4,51 +4,47 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item mx-2 active">
                             <a class="nav-link" href="index.php">Sākums</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item mx-2 dropdown">
                             <a href="#" 
                                 class="nav-link dropdown-toggle" 
-                                id="navbarDropdown" 
+                                id="navbarDropdown1" 
                                 role="button" 
                                 data-bs-toggle="dropdown" 
                                 aria-expanded="false">
                                 Uzbūve
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
                                     <a class="dropdown-item" href="tabulu_saraksts.php">Tabulas</a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="tabulas_izvele.php">Izvēlēties tabulu</a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="vaicajumu_saraksts.php">Vaicājums</a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="proceduras_ievietosana.php">Procedūra</a>
-                                </li>
-                            </ul>
+                            </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="apraksts.php">Apraksts</a>
+                        <li class="nav-item mx-2 dropdown">
+                            <a href="#"                              
+                                class="nav-link dropdown-toggle" 
+                                id="navbarDropdown2" 
+                                role="button" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                                Skripti
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                    <a class="dropdown-item" href="tabulu_izveides_skripti.php">Izveides</a>
+                                    <a class="dropdown-item" href="datu_ievietosanas_skripti.php">Datu ievietošanas</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="shema.php">Shēma</a>
+                        <li class="nav-item mx-2">
+                            <form action="table.php" class="d-flex">
+                                <input type="text" class="form-control me-2" name="table" placeholder="Tabulas nosaukums">
+                                <button class="btn btn-light mx-2" type="submit">Izvēlēties</button>
+                            </form>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="tabulu_izveides_skripti.php">Izveides skripti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="datu_ievietosanas_skripti.php">Datu ievietošanas skripti</a>
-                        </li>
-                        <form action="table.php" class="d-flex">
-                            <input type="text" class="form-control me-2" name="table" placeholder="Ievadiet tabulas nosaukumu">
-                            <button class="btn btn-light" type="submit">Izvēlēties</button>
-                        </form>
                     </ul>
                 </div>
             </div>
