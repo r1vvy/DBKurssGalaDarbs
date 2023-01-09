@@ -1,6 +1,7 @@
 <?php
     require_once('config.php');
-    echo '<a href="proceduras_ievietosana.html">Atpakaļ</a>';
+    include('head.php');
+    include('nav.php');
     // get query from $_POST array
     $query = $_POST["procedura"];
     echo "<h3>Procedūra</h3>";

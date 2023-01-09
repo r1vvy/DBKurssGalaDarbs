@@ -22,6 +22,8 @@ if(isset($_POST['update']))
   if ($conn->query($query) === TRUE) {
       header("Location: table.php?table=$table");
   } else {
+    include('head.php');
+    include('nav.php');
       echo "<p>Error updating record: </p><br>
       <pre>" . $conn->error. "</pre>";
   }

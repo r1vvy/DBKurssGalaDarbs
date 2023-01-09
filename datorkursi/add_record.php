@@ -1,6 +1,7 @@
 <?php
 require_once("config.php");
-
+include('head.php');
+include('nav.php');
 $table = $_POST['table'];
 $query = "SELECT * FROM $table LIMIT 1";
 $result = $conn->query($query);

@@ -1,6 +1,8 @@
 <?php
 require_once("config.php");
 
+include('head.php');
+include('nav.php');
 if(isset($_POST['delete'])){
     $table = $_POST['table'];
     $primary_key = array_keys($_POST)[1];

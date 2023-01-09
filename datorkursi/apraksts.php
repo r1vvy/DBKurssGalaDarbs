@@ -5,15 +5,10 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>DB Apraksts</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <?php include('head.php'); ?>
     </head>
     <body>
-        <ul>
-            <li><a href="index.html">Sākums</a></li>
-        </ul>
+        <?php include('nav.php'); ?>
         <h1>DB Apraksts</h1>
         Izveidotā datubāze “kajasbumba” ir paredzēta futbola līgu un spēlētāju statistikas datu glabāšanai. 
         Tai pieder 7 entītijas – “treneri”, “stadioni”, “speletaji”, “speletajs_statistika”, “klubi”, “ligas” un “ligas_klubi”. Entītijas – “speletaji”, “treneri” un “stadioni” tiek savienoti ar “klubi”. 

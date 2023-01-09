@@ -5,15 +5,10 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>DB Shēma</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <ul>
-            <li><a href="index.html">Sākums</a></li>
-        </ul>
+        <?php include('head.php'); ?>
     </head>
     <body>
+        <?php include('nav.php'); ?>
         <h3>DB Shēma</h3>
         <img src="atteli/shema.png" alt="Datubāzes shēma">
     </body>

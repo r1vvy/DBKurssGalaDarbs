@@ -1,8 +1,8 @@
 <?php
 require_once("config.php");
-echo '<br/>';
-echo '<a href="index.html">Sākums</a>
-        <h3>Izvēlaties tabulu:</h3>';
+include('head.php');
+include('nav.php');
+echo '<h3>Izvēlaties tabulu:</h3>';
 $query = 'show tables';
 $result = $conn->query($query);
 //$row = $result->fetch_assoc();

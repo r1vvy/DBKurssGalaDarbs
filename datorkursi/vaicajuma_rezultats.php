@@ -1,8 +1,9 @@
 <?php
     require_once("config.php");
-    echo '<a href="vaicajumu_saraksts.html">Atpakaļ</a>';
+    include('head.php');
+    include('nav.php');
     $query = $_POST["ieraksts"];
-    echo "<h3>Vaicājums</h3>";
+    echo '<h3>Vaicājums</h3>';
     echo '<br/>Vaicājums: '.$query;
 
     $result = $conn -> query($query);

@@ -5,14 +5,10 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Procedūras</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <a href="index.html">Sākums</a>
-        <h3>Procedūras</h3>
+       <?php include('head.php'); ?>
     </head>
     <body>
+        <?php include('nav.php'); ?>
         <form id="procedure" action="proceduras_rezultats.php" method="post">
             <label for="procedura">Ievadiet procedūru:</label>
             <br/>

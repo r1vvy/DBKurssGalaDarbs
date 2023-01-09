@@ -1,6 +1,7 @@
 <?php
 require_once("config.php");
-echo '<a href="tabulas_izvele.php">Atpakaļ</a>';
+include('head.php');
+include('nav.php');
 echo '<h1>Tabulas saturs</h1>';
 
 $table = $_GET['table'];
