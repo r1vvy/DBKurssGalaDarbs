@@ -19,7 +19,6 @@
                                 Uzbūve
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                    <a class="dropdown-item" href="tabulu_saraksts.php">Tabulas</a>
                                     <a class="dropdown-item" href="tabulas_izvele.php">Izvēlēties tabulu</a>
                                     <a class="dropdown-item" href="vaicajumu_saraksts.php">Vaicājums</a>
                                     <a class="dropdown-item" href="proceduras_ievietosana.php">Procedūra</a>
@@ -40,7 +39,7 @@
                             </div>
                         </li>
                         <li class="nav-item mx-2">
-                            <form action="table.php" class="d-flex">
+                            <form action="table.php" class="d-flex" method="get">
                                 <input type="text" class="form-control me-2" name="table" placeholder="Tabulas nosaukums">
                                 <button class="btn btn-light mx-2" type="submit">Izvēlēties</button>
                             </form>

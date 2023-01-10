@@ -10,3 +10,7 @@ body
       padding-top: 0px; 
     }
 }
+.small-middle-container {
+	margin: auto;
+	width: 70%;
+}
