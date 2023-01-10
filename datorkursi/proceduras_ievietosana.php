@@ -9,14 +9,20 @@
     </head>
     <body>
         <?php include('nav.php'); ?>
-        <form id="procedure" action="proceduras_rezultats.php" method="post">
-            <label for="procedura">Ievadiet procedūru:</label>
-            <br/>
-            <textarea name="procedura" required rows="4" cols="80"></textarea>
-            <br/>
-            <input type="button" value="+" id="add-button">
-            <input type="submit" value="izpildit">
-        </form>
+        <div class="container-fluid d-flex" style="justify-content: center">
+            <div class="row">
+                <div class="col-12 shadow p-3 mb-5 bg-body rounded mx-3">
+                    <form id="procedure" action="proceduras_rezultats.php" method="post">
+                        <label for="procedura">Ievadiet procedūru:</label>
+                        <div id="form-area">
+                            <textarea name="procedura" required rows="4" class="col-12"></textarea>
+                        </div>
+                        <input type="button" value="+" class="add-button">
+                        <input type="submit" value="izpildit">
+                    </form>
+                </div>
+            </div>
+        </div>
     <script>
         let i = 1;
         function addField() {
@@ -24,11 +30,12 @@
             var textarea = document.createElement("textarea");
             // Set the name and required attributes of the textarea
             textarea.setAttribute("name", "ieraksts" + i++);
+            textarea.setAttribute("class", "col-12");
             textarea.setAttribute("required", "");
             // Add the textarea to the form
-            document.getElementById("procedure").appendChild(textarea);
+            document.getElementById("form-area").appendChild(textarea);
         }
-        document.getElementById("add-button").addEventListener("click", addField);
+        document.querySelector(".add-button").addEventListener("click", addField);
     </script>
     </body>
 </html>
